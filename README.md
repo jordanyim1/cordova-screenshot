@@ -1,3 +1,8 @@
+Updated the plugin below to save to iOS camera roll
+https://github.com/gitawego/cordova-screenshot/issues/36#
+
+
+
 cordova-screenshot
 ==================
 
