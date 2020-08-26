@@ -57,8 +57,7 @@ CGFloat statusBarHeight()
 	NSString *jpgPath = [NSTemporaryDirectory() stringByAppendingPathComponent:path];
 
 	UIImage *image = [self getScreenshot];
-	NSData *imageData = UIImageJPEGRepresentation(image,[quality floatValue]);
-	[imageData writeToFile:jpgPath atomically:NO];
+	UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
 
 	CDVPluginResult* pluginResult = nil;
 	NSDictionary *jsonObj = [ [NSDictionary alloc]
